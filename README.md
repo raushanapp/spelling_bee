@@ -93,7 +93,7 @@ Suggested API endpoints:
 
 The Express server should keep routing, game rules, and storage separate. The frontend sends a request, the controller coordinates the work, the service applies the spelling rules, and the repository reads or writes the database.
 
-For the full backend design, API contract, responsibilities, and implementation order, see [docs/backend-architecture.md](docs/backend-architecture.md).
+For the full backend design, API contract, responsibilities, and implementation order, see [docs/backend-architecture.md](server/docs/backend-architecture.md).
 
 ```mermaid
 flowchart LR
