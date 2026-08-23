@@ -13,7 +13,7 @@ interface HomeycombProps {
 export function Honeycomb({
   centerLetter,
   outerLetters,
-  validLetters,
+  //   validLetters,
   addLetter,
   removeLetter,
   checkGuess,

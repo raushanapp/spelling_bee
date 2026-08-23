@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import { Honeycomb } from "./components/Honeycomb";
 import { Guess } from "./components/Guess";
 import { CorrectGuesses } from "./components/CorrectGuesses";
+import { Score } from "./components/Score";
 import "./App.css";
 
 export interface ApiResponse {
@@ -77,11 +78,16 @@ function App() {
       {data ? (
         <>
           <Header date={data?.displayDate} editor={data?.editor} />
+          <Score correctGuesses={correctGuesses}></Score>
           <CorrectGuesses correctGuesses={correctGuesses} />
           <section className="container">
             <div className="inputs">
               <div className="center">
-                <Guess guess={guess}></Guess>
+                <Guess
+                  guess={guess}
+                  outerLetters={data.outerLetters}
+                  centerLetter={data.centerLetter}
+                ></Guess>
                 <Honeycomb
                   centerLetter={data.centerLetter}
                   outerLetters={data.outerLetters}

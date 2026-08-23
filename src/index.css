@@ -55,6 +55,17 @@ body {
   letter-spacing: 3px;
   font-size: 2rem;
 }
+.guess-letter {
+  font-size: 1.5rem;
+}
+
+.guess-outer {
+  color: #4444;
+}
+
+.guess-center {
+  color: #f7da21;
+}
 
 .honeycomb {
   position: relative;
